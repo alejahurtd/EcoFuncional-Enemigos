@@ -1,0 +1,90 @@
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
+}
+
+.dashboard-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.header {
+	text-align: center;
+	padding: 10px 0;
+	background-color: #c3002f;
+	color: white;
+}
+
+.logo {
+	max-width: 180px;
+}
+
+.banner {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.banner-image {
+	width: 100%;
+	border-radius: 8px;
+}
+
+.dashboard-title {
+	text-align: center;
+	color: #c3002f;
+	font-size: 24px;
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.orders-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+	border: 1px solid #ddd;
+	padding: 12px;
+	text-align: left;
+}
+
+.orders-table th {
+	background-color: #f1f1f1;
+	color: #333;
+	font-weight: bold;
+}
+
+.orders-table tbody tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.orders-table tbody tr:hover {
+	background-color: #f1f1f1;
+}
+
+.status-selector {
+	width: 100%;
+	padding: 6px 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: white;
+	font-weight: bold;
+	color: #333;
+	cursor: pointer;
+}
+
+.status-selector option {
+	font-weight: normal;
+}
+
+.status-selector:hover {
+	border-color: #888;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}

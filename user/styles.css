@@ -1,0 +1,383 @@
+/* Estilo general */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+	height: 100vh; /* Altura completa del viewport */
+	justify-content: center; /* Centrar contenido verticalmente */
+}
+
+.home-container h1 {
+	font-size: 22px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.home-container h2 {
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 10px;
+}
+
+.home-container .highlight {
+	color: #d32027;
+	font-weight: bold;
+}
+
+.home-container p {
+	font-size: 14px;
+	color: #777;
+	margin: 10px 0 20px;
+	line-height: 1.5;
+	padding: 0 10px; /* Espaciado interno para dispositivos pequeños */
+}
+
+#startButton {
+	background-color: #d32027;
+	color: #fff;
+	border: none;
+	padding: 12px 25px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+	background-color: #a8161f;
+}
+
+/* Imagen de logo */
+.home-header .logo {
+	width: 80px; /* Tamaño responsivo */
+	margin-bottom: 20px;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+	.home-container h1 {
+		font-size: 26px;
+	}
+
+	.home-container h2 {
+		font-size: 22px;
+	}
+
+	.home-container p {
+		font-size: 16px;
+	}
+
+	#startButton {
+		font-size: 18px;
+		padding: 14px 30px;
+	}
+
+	.home-header .logo {
+		width: 100px; /* Más grande para tablets */
+	}
+}
+
+@media (min-width: 1024px) {
+	.home-container {
+		max-width: 600px;
+		margin: auto;
+		padding: 40px;
+	}
+
+	.home-container h1 {
+		font-size: 28px;
+	}
+
+	.home-container h2 {
+		font-size: 24px;
+	}
+
+	.home-container p {
+		font-size: 18px;
+	}
+
+	#startButton {
+		font-size: 20px;
+		padding: 16px 35px;
+	}
+
+	.home-header .logo {
+		width: 120px;
+	}
+}
+
+.question-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.question-container h2 {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.question-container p {
+	font-size: 16px;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+.options {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.option-btn {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #fff;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+	background-color: #f7f7f7;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#prevBtn,
+#nextBtn {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#prevBtn {
+	background-color: #ddd;
+	color: #333;
+}
+
+#prevBtn:disabled {
+	background-color: #eee;
+	cursor: not-allowed;
+}
+
+#nextBtn {
+	background-color: #d32027;
+	color: #fff;
+}
+
+#nextBtn:disabled {
+	background-color: #faa;
+	cursor: not-allowed;
+}
+
+/* Estilo general */
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f7f7f7;
+}
+
+.recomendation-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.recomendation-container header .logo {
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.recomendation-container h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 10px;
+}
+
+.recomendation-container h1 .highlight {
+	color: #d32027;
+	font-weight: bold;
+}
+
+.recomendation-container p {
+	font-size: 16px;
+	color: #555;
+	margin: 5px 0;
+}
+
+.buttons-container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.action-button,
+.cancel-button {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.action-button {
+	background-color: #d32027;
+	color: #fff;
+}
+
+.action-button:hover {
+	background-color: #a8161f;
+}
+
+.cancel-button {
+	background-color: #ddd;
+	color: #333;
+}
+
+.cancel-button:hover {
+	background-color: #bbb;
+}
+
+.billing-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.billing-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.billing-form input {
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.buttons-container {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.action-button,
+.cancel-button {
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.action-button {
+	background-color: #d32027;
+	color: #fff;
+}
+
+.cancel-button {
+	background-color: #ddd;
+	color: #333;
+}
+
+.progress-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.progress-container h1 {
+	font-size: 24px;
+	color: #333;
+}
+
+.progress-container p {
+	font-size: 16px;
+	color: #555;
+}
+
+.product-image {
+	width: 150px;
+	height: auto;
+	margin: 20px 0;
+}
+
+.status-button {
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	background-color: #d32027;
+	color: #fff;
+	cursor: default;
+}
+
+.status-button:hover {
+	background-color: #a8161f;
+}
+.final-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.final-container h1 {
+	font-size: 24px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.final-container .action-button {
+	padding: 12px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	background-color: #d32027;
+	color: #fff;
+	cursor: pointer;
+}
+
+.final-container .action-button:hover {
+	background-color: #a8161f;
+}
+
+.final-container .final-image {
+	width: 200px;
+	height: auto;
+	margin-top: 20px;
+}
